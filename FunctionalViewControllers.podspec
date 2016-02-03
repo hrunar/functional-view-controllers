@@ -25,6 +25,8 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+    This code is ripped from Chris Eidhof's github-issues repo and is a quick start library if you want to experiment with building functional view controllers.
+    His talk outlining the concept can be found here: https://www.youtube.com/watch?v=sXHJ-CeN0Us
                    DESC
 
   s.homepage     = "https://github.com/hrunar/functional-view-controllers"

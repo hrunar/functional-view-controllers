@@ -48,7 +48,7 @@ public struct CellConfiguration<A> {
 }
 
 
-public func asyncTableVC<A>(loadData: ([A] -> ()) -> (), configuration: CellConfiguration<A>, reloadable: Bool = true, navigationItem: NavigationItem = defaultNavigationItem, registerUpdateCallback: (([A] -> ()) -> ())? = nil) -> Screen<A> {
+public func asyncTableVC<A>(loadData: ([A] -> ()) -> (), configuration: CellConfiguration<A>, reloadable: Bool = true, navigationItem: NavigationItem = defaultNavigationItem, registerUpdateCallback: (([A] -> ()) -> ())?) -> Screen<A> {
     return Screen(navigationItem) { callback in
         let myTableViewController = MyViewController(style: UITableViewStyle.Plain)
         myTableViewController.items = nil

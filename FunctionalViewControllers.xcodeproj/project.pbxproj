@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		ACF63B7A1C62714A00CFD668 /* FunctionalViewControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF63B791C62714A00CFD668 /* FunctionalViewControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACF63B861C62748800CFD668 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF63B811C62748800CFD668 /* Library.swift */; };
+		ACF63B871C62748800CFD668 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF63B821C62748800CFD668 /* APIClient.swift */; };
+		ACF63B881C62748800CFD668 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF63B831C62748800CFD668 /* Network.swift */; };
+		ACF63B891C62748800CFD668 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF63B841C62748800CFD668 /* TableView.swift */; };
+		ACF63B8A1C62748800CFD668 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF63B851C62748800CFD668 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACF63B761C62714A00CFD668 /* FunctionalViewControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunctionalViewControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF63B791C62714A00CFD668 /* FunctionalViewControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalViewControllers.h; sourceTree = "<group>"; };
 		ACF63B7B1C62714A00CFD668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF63B811C62748800CFD668 /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		ACF63B821C62748800CFD668 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		ACF63B831C62748800CFD668 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		ACF63B841C62748800CFD668 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		ACF63B851C62748800CFD668 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +56,11 @@
 		ACF63B781C62714A00CFD668 /* FunctionalViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ACF63B811C62748800CFD668 /* Library.swift */,
+				ACF63B821C62748800CFD668 /* APIClient.swift */,
+				ACF63B831C62748800CFD668 /* Network.swift */,
+				ACF63B841C62748800CFD668 /* TableView.swift */,
+				ACF63B851C62748800CFD668 /* UIViewController+Extensions.swift */,
 				ACF63B791C62714A00CFD668 /* FunctionalViewControllers.h */,
 				ACF63B7B1C62714A00CFD668 /* Info.plist */,
 			);
@@ -130,6 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF63B861C62748800CFD668 /* Library.swift in Sources */,
+				ACF63B891C62748800CFD668 /* TableView.swift in Sources */,
+				ACF63B8A1C62748800CFD668 /* UIViewController+Extensions.swift in Sources */,
+				ACF63B871C62748800CFD668 /* APIClient.swift in Sources */,
+				ACF63B881C62748800CFD668 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +248,7 @@
 		ACF63B7F1C62714A00CFD668 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +259,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.runr.FunctionalViewControllers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		ACF63B801C62714A00CFD668 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -276,6 +299,7 @@
 				ACF63B801C62714A00CFD668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
